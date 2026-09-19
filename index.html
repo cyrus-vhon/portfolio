@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyrus Vhon — BSIT Student | Aspiring Web Developer</title>
+<meta name="description" content="Portfolio of Cyrus Vhon, a BSIT student and aspiring web developer from Laguna, Philippines.">
+
+<!-- Google Fonts: Sora (display/headings) + Manrope (body text) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- style.css: the ONLY external CSS file used in this project -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ BACKGROUND LAYERS (decorative, purely visual) ============ -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob bg-blob--one"></div>
+  <div class="bg-blob bg-blob--two"></div>
+  <div class="bg-glow-cursor" id="cursorGlow"></div>
+</div>
+
+<!-- ============ SKIP LINK (accessibility) ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header>
+  <nav class="navbar" id="navbar" aria-label="Primary">
+    <a href="#home" class="nav-logo">CV<span class="nav-logo-dot">.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="navbar-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-inner hero-inner--centered">
+      <div class="hero-text">
+        <p class="hero-badge">Available for freelance &amp; school projects</p>
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Cyrus Vhon</h1>
+        <p class="hero-role">
+          I'm a <span class="typing-text" id="typingText"></span><span class="typing-cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-intro">
+          I'm a BSIT student passionate about web development and creating modern, responsive, and useful websites and systems. I'm continuously learning new technologies while building projects and gaining experience through academic and client-based work.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-stack" aria-label="Core technologies">
+          <img src="assets/icons/html5.svg" alt="HTML5" loading="lazy">
+          <img src="assets/icons/css3.svg" alt="CSS3" loading="lazy">
+          <img src="assets/icons/javascript.svg" alt="JavaScript" loading="lazy">
+          <img src="assets/icons/react.svg" alt="React" loading="lazy">
+          <img src="assets/icons/tailwind.svg" alt="Tailwind CSS" loading="lazy">
+          <img src="assets/icons/php.svg" alt="PHP" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span class="scroll-cue-line"></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">About</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="photo-card">
+            <!-- Replace assets/profile-mj-cutout.png with your own cut-out photo any time -->
+            <img src="assets/profile.jpg" alt="Portrait of Cyrus Vhon" class="profile-photo" onerror="this.parentElement.classList.add('photo-card--fallback')">
+            <div class="profile-fallback" aria-hidden="true">CV</div>
+            <span class="photo-badge">📍 Laguna, Philippines</span>
+          </div>
+        </div>
+
+        <div class="about-body reveal">
+          <p>I am a BSIT student from Laguna State Polytechnic University – Los Baños Campus.</p>
+          <p>I am currently developing my skills in web development and learning different technologies used to create websites and systems.</p>
+          <p>I enjoy creating websites, experimenting with different designs, and learning how frontend and backend technologies work together.</p>
+          <p>I am interested in HTML, CSS, JavaScript, PHP, React, databases, and modern web development.</p>
+          <p>I continuously improve my skills through school projects, personal projects, and client-based requests.</p>
+          <p>My goal is to become a capable web developer who can create useful, responsive, functional, and user-friendly systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES / WHAT I DO ============ -->
+  <section id="services" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">What I Do</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="glass-card service-card">
+          <span class="service-step">01</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 4L3 12L8 20M16 4L21 12L16 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Web Development</h3>
+          <p>Creating responsive and functional websites using HTML, CSS, and JavaScript.</p>
+        </article>
+
+        <article class="glass-card service-card">
+          <span class="service-step">02</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9H21M8 14H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>School System Development</h3>
+          <p>Developing customized web-based systems for academic and school-related projects.</p>
+        </article>
+
+        <article class="glass-card service-card">
+          <span class="service-step">03</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 8a3 3 0 1 0 0-6M22 20c0-2.8-1.8-5.1-4.3-5.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>Client-Based Projects</h3>
+          <p>Working with clients and students from different schools to understand their requirements and turn their ideas into functional web projects.</p>
+        </article>
+
+        <article class="glass-card service-card">
+          <span class="service-step">04</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9H21" stroke="currentColor" stroke-width="1.6"/><circle cx="6.5" cy="6" r="0.75" fill="currentColor"/></svg>
+          <h3>UI/UX &amp; Web Design</h3>
+          <p>Creating clean, modern, simple, and user-friendly interfaces.</p>
+        </article>
+      </div>
+
+      <p class="client-note">
+        Aside from academic projects, I also work on project-based requests from clients and students from different schools. I help turn their system ideas and requirements into functional web projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-group reveal">
+        <h3 class="skills-group-title">Frontend Development</h3>
+        <div class="skill-list">
+
+          <div class="skill-item" data-percent="80">
+            <div class="skill-icon-wrap" style="--icon-color:#E44D26">
+              <img src="assets/icons/html5.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">HTML5</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>HTML</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:80%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="75">
+            <div class="skill-icon-wrap" style="--icon-color:#1572B6">
+              <img src="assets/icons/css3.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">CSS3</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>CSS</span><span class="skill-percent">75%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:75%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="50">
+            <div class="skill-icon-wrap" style="--icon-color:#F7DF1E">
+              <img src="assets/icons/javascript.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">JavaScript</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>JavaScript</span><span class="skill-percent">50%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:50%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-group reveal">
+        <h3 class="skills-group-title">Programming Languages</h3>
+        <div class="skill-list">
+
+          <div class="skill-item" data-percent="45">
+            <div class="skill-icon-wrap" style="--icon-color:#3776AB">
+              <img src="assets/icons/python.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">Python</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>Python</span><span class="skill-percent">45%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:45%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="40">
+            <div class="skill-icon-wrap" style="--icon-color:#007396">
+              <img src="assets/icons/java.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">Java</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>Java</span><span class="skill-percent">40%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:40%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="35">
+            <div class="skill-icon-wrap" style="--icon-color:#00599C">
+              <img src="assets/icons/cpp.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">C++</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>C++</span><span class="skill-percent">35%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:35%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="25">
+            <div class="skill-icon-wrap" style="--icon-color:#239120">
+              <img src="assets/icons/csharp.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">C#</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>C#</span><span class="skill-percent">25%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:25%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-group reveal">
+        <h3 class="skills-group-title">Frameworks &amp; Libraries</h3>
+        <div class="skill-list">
+
+          <div class="skill-item" data-percent="30">
+            <div class="skill-icon-wrap" style="--icon-color:#61DAFB">
+              <img src="assets/icons/react.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">React</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>React</span><span class="skill-percent">30%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:30%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="60">
+            <div class="skill-icon-wrap" style="--icon-color:#7952B3">
+              <img src="assets/icons/bootstrap.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">Bootstrap</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>Bootstrap</span><span class="skill-percent">60%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:60%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="50">
+            <div class="skill-icon-wrap" style="--icon-color:#06B6D4">
+              <img src="assets/icons/tailwind.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">Tailwind CSS</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>Tailwind CSS</span><span class="skill-percent">50%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:50%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="25">
+            <div class="skill-icon-wrap" style="--icon-color:#DD0031">
+              <img src="assets/icons/angular.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">Angular</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>Angular</span><span class="skill-percent">25%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:25%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-group reveal">
+        <h3 class="skills-group-title">Backend Development</h3>
+        <div class="skill-list">
+
+          <div class="skill-item" data-percent="50">
+            <div class="skill-icon-wrap" style="--icon-color:#777BB4">
+              <img src="assets/icons/php.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">PHP</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>PHP</span><span class="skill-percent">50%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:50%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-group reveal">
+        <h3 class="skills-group-title">Database</h3>
+        <div class="skill-list">
+
+          <div class="skill-item" data-percent="55">
+            <div class="skill-icon-wrap" style="--icon-color:#4479A1">
+              <img src="assets/icons/mysql.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">MySQL</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-info-top"><span>MySQL</span><span class="skill-percent">55%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="--target:55%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="glass-card project-card project-card--featured">
+          <div class="project-media">
+            <!-- Replace assets/cdlb-project.png with your project screenshot -->
+            <img src="assets/cdlb-project.jpg" alt="Screenshot of the CDLB Court Reservation System" loading="lazy" onerror="this.parentElement.classList.add('project-media--fallback')">
+            <div class="project-media-fallback" aria-hidden="true">CDLB Court Reservation System</div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag-featured">Featured Project</span>
+            <h3>CDLB Court Reservation System</h3>
+            <p>A web-based court reservation system designed to make the reservation process more organized and convenient. It provides a web interface for handling the reservation process and managing system information.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+            </div>
+            <a href="https://cdlb-reservation.infinityfreeapp.com/index.php" class="btn btn-primary btn-small" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="glass-card education-card reveal">
+        <div class="education-mark" aria-hidden="true">LSPU</div>
+        <div>
+          <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+          <p>Laguna State Polytechnic University – Los Baños Campus</p>
+        </div>
+      </div>
+
+      <div class="glass-card achievements-card reveal">
+        <h3>Achievements</h3>
+        <p>Achievements Coming Soon</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section--contact">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2 class="section-title">Let's Work Together</h2>
+      </div>
+
+      <div class="contact-grid">
+        <p class="contact-text reveal">
+          I'm open to talking about website projects, school systems, web development, system development, collaboration, or any project-based request. Feel free to reach out.
+        </p>
+
+        <div class="contact-links reveal">
+          <a href="mailto:cyrusvhon1233@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>cyrusvhon1233@gmail.com</span>
+          </a>
+          <a href="https://github.com/Kotori-png" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.5 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.34-1.1.62-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.facebook.com/share/1NRiSJCLKT/" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.2h2.4l.4-2.8h-2.8V9.2c0-.8.2-1.4 1.4-1.4h1.5V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2h-2.4v2.8h2.4V21h3Z"/></svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">CV<span class="footer-logo-dot">.</span></a>
+        <p class="footer-tagline">BSIT Student | Aspiring Web Developer, building useful, responsive web projects one at a time.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer navigation">
+        <p class="footer-col-title">Navigate</p>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+      </nav>
+
+      <div class="footer-col">
+        <p class="footer-col-title">Connect</p>
+        <a href="mailto:cyrusvhon1233@gmail.com" class="footer-connect-link">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>cyrusvhon1233@gmail.com</span>
+        </a>
+        <a href="https://github.com/Kotori-png" class="footer-connect-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.5 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.34-1.1.62-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.facebook.com/share/1NRiSJCLKT/" class="footer-connect-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.2h2.4l.4-2.8h-2.8V9.2c0-.8.2-1.4 1.4-1.4h1.5V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2h-2.4v2.8h2.4V21h3Z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Cyrus Vhon. All rights reserved.</p>
+      <a href="#home" class="footer-top-link">Back to top ↑</a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- script.js: the ONLY external JavaScript file used in this project -->
+<script src="script.js"></script>
+</body>
+</html>
