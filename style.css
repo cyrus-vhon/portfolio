@@ -753,7 +753,6 @@ html[data-theme="light"] .btn-primary:hover {
 }
 .skill-item:hover {
   border-color: var(--icon-color, var(--accent-primary));
-  transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
@@ -799,6 +798,12 @@ html[data-theme="light"] .btn-primary:hover {
 }
 
 .skill-info { flex: 1; min-width: 0; }
+
+.skill-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
 
 .skill-info-top {
   display: flex;
