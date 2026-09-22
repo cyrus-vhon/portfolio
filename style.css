@@ -559,6 +559,15 @@ html[data-theme="light"] .btn-primary:hover {
 
 .btn-small { padding: 0.65rem 1.3rem; font-size: 0.88rem; }
 
+.btn-disabled {
+  border: 1px solid var(--glass-border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+.btn-disabled:hover { box-shadow: none; transform: none; }
+
 .photo-card {
   position: relative;
   width: clamp(240px, 30vw, 360px);
