@@ -566,6 +566,11 @@ html[data-theme="light"] .btn-primary:hover {
   cursor: not-allowed;
   opacity: 0.75;
 }
+
+html[data-theme="light"] .btn-disabled {
+  color: #050504;
+}
+
 .btn-disabled:hover { box-shadow: none; transform: none; }
 
 .photo-card {
