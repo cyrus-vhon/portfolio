@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Vhon | Web Developer</title>
 <meta name="description" content="Portfolio of Cyrus Vhon, a BSIT student and aspiring web developer from Laguna, Philippines.">
 
 <!-- Favicon: gold "V" mark, SVG primary with PNG fallbacks for older browsers -->
@@ -45,6 +45,7 @@
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
 
@@ -345,6 +346,16 @@
             </div>
           </div>
 
+            <div class="skill-item" data-percent="55">
+            <div class="skill-icon-wrap" style="--icon-color:#336791">
+              <img src="assets/icons/postgresql.svg" alt="" class="skill-icon" loading="lazy">
+              <span class="skill-tooltip">PostgreSQL</span>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">PostgreSQL</span>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -414,6 +425,24 @@
           </div>
         </article>
 
+          <article class="glass-card project-card project-card--featured reveal">
+          <div class="project-media">
+            <!-- Replace assets/cdlb-project.png with your project screenshot -->
+            <img src="assets/ticore.png" alt="Screenshot of the CDLB Court Reservation System" loading="lazy" onerror="this.parentElement.classList.add('project-media--fallback')">
+            <div class="project-media-fallback" aria-hidden="true">TICORE Court Reservation System</div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag-featured">Featured Project</span>
+            <h3>TICORE — Barangay Court Reservation System</h3>
+            <p>A web-based court reservation system developed for Barangay Timugan, designed to make court scheduling and reservations more organized and convenient. The system allows residents to view court availability, 
+              check schedules, and manage reservation requests through an easy-to-use web interface.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>PostgreSQL</span><span>Node.js</span><span>React</span>
+            </div>
+            <span class="btn btn-disabled btn-small">In Development</span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -426,15 +455,23 @@
       </div>
 
       <div class="glass-card education-card reveal">
-        <div class="education-mark" aria-hidden="true">LSPU</div>
+        <img src="assets/lspu-logo.png" alt="LSPU" class="education-mark" aria-hidden="true">
         <div>
           <h3>Bachelor of Science in Information Technology (BSIT)</h3>
           <p>Laguna State Polytechnic University – Los Baños Campus</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements" class="section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <h2 class="section-title">Achievements</h2>
+      </div>
 
       <div class="glass-card achievements-card reveal">
-        <h3>Achievements</h3>
 
         <a class="certificate-card" href="assets/certificates/coursera-figma-cert.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full certificate: Get Started with Figma, Coursera, in a new tab">
           <div class="certificate-thumb">
@@ -542,6 +579,7 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
       </nav>
 
       <div class="footer-col">
@@ -550,7 +588,7 @@
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>cyrusvhon1233@gmail.com</span>
         </a>
-        <a href="https://github.com/Kotori-png" class="footer-connect-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/cyrus-vhon" class="footer-connect-link" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.5 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.34-1.1.62-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
           <span>GitHub</span>
         </a>
