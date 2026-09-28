@@ -1,5 +1,5 @@
 /* =========================================================
-   CYRUS VHON — PORTFOLIO STYLES
+   CYRUS VHON â€” PORTFOLIO STYLES
    Table of contents:
    1. Design tokens (edit colors/fonts here)
    2. Reset & base
@@ -20,7 +20,7 @@
 
 /* ---------- 1. DESIGN TOKENS ---------- */
 :root {
-  /* Colors — change these to re-theme the whole site */
+  /* Colors â€” change these to re-theme the whole site */
   --bg-primary: #050504;
   --bg-secondary: #0e0d0a;
   --accent-primary: #e8b923;   /* rich gold */
@@ -32,7 +32,7 @@
   --glass-border: rgba(232, 185, 35, 0.14);
   --success-line: rgba(255, 217, 102, 0.35);
 
-  /* Theme-dependent surface tints — these flip in the light theme below */
+  /* Theme-dependent surface tints â€” these flip in the light theme below */
   --nav-bg: rgba(14, 13, 10, 0.6);
   --nav-bg-scrolled: rgba(8, 7, 5, 0.82);
   --mobile-menu-bg: rgba(8, 7, 5, 0.94);
@@ -57,7 +57,7 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Light theme — toggled by JS setting data-theme="light" on <html> */
+/* Light theme â€” toggled by JS setting data-theme="light" on <html> */
 html[data-theme="light"] {
   --bg-primary: #faf8f3;
   --bg-secondary: #ffffff;
@@ -391,7 +391,7 @@ html[data-theme="light"] .theme-icon--moon { opacity: 0; transform: rotate(90deg
   box-shadow: 0 0 8px var(--accent-secondary);
 }
 
-/* Infinite radial "ping" — a ring that expands out of the dot and fades, forever */
+/* Infinite radial "ping" â€” a ring that expands out of the dot and fades, forever */
 .hero-badge::after {
   content: '';
   position: absolute;
@@ -881,6 +881,7 @@ html[data-theme="light"] .btn-disabled {
 .project-media--fallback .project-media-fallback { display: flex; }
 
 .project-body { padding: 1.8rem; display: flex; flex-direction: column; }
+.project-body > .btn { margin-top: auto; align-self: flex-start; }
 
 .project-tag-featured {
   color: var(--accent-secondary);
@@ -1112,7 +1113,7 @@ html[data-theme="light"] .btn-disabled {
   cursor: pointer;
 }
 
-/* Honeypot field — hidden from real visitors, bots fill it and get filtered */
+/* Honeypot field â€” hidden from real visitors, bots fill it and get filtered */
 .form-honeypot {
   position: absolute;
   left: -9999px;
