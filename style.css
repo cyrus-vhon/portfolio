@@ -845,7 +845,10 @@ html[data-theme="light"] .btn-disabled {
 .skill-bar-fill.animate { width: var(--target); }
 
 @media (max-width: 768px) {
-  .skill-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
+  .skills-group .skill-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.7rem;
+  }
   .skill-item { padding: 0.7rem; gap: 0.7rem; }
   .skill-icon-wrap { width: 38px; height: 38px; }
   .skill-icon { width: 20px; height: 20px; }
@@ -854,6 +857,7 @@ html[data-theme="light"] .btn-disabled {
   .skill-icon-wrap[style*="#4479A1"] .skill-icon { filter: brightness(0) invert(1); }
   html[data-theme="light"] .skill-icon-wrap[style*="#4479A1"] .skill-icon { filter: none; }
 }
+
 
 /* ---------- 10. PROJECTS ---------- */
 .project-grid {
